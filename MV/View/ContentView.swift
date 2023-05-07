@@ -12,15 +12,30 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            
+            List(storeModel.products) { product in
+                Text(product.title)
+            }
         }
-        .padding()
+        .task {
+            await populateProducts()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environmentObject(StoreModel(webservice: Webservice()))
+    }
+}
+
+// MARK: - Methods
+extension ContentView {
+    private func populateProducts() async {
+        do {
+            try await storeModel.populateProducts()
+        } catch {
+            print(error)
+        }
     }
 }
 
