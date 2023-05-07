@@ -24,3 +24,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+// SwiftUI views
+// not only views but also view model
+// Model and ViewModel - View in SwiftUI
