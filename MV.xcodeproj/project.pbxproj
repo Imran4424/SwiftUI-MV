@@ -13,6 +13,7 @@
 		1DB980832A079B85009DFBC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB980822A079B85009DFBC6 /* Preview Assets.xcassets */; };
 		1DB9808C2A079E9A009DFBC6 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9808B2A079E9A009DFBC6 /* StoreModel.swift */; };
 		1DB9808E2A079F13009DFBC6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9808D2A079F13009DFBC6 /* Product.swift */; };
+		1DB980912A07A022009DFBC6 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB980902A07A022009DFBC6 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		1DB980822A079B85009DFBC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DB9808B2A079E9A009DFBC6 /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
 		1DB9808D2A079F13009DFBC6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1DB980902A07A022009DFBC6 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		1DB9807A2A079B84009DFBC6 /* MV */ = {
 			isa = PBXGroup;
 			children = (
+				1DB9808F2A079FD9009DFBC6 /* Services */,
 				1DB980892A079DE1009DFBC6 /* Model */,
 				1DB9808A2A079DEE009DFBC6 /* View */,
 				1DB9807B2A079B84009DFBC6 /* MVApp.swift */,
@@ -87,6 +90,14 @@
 				1DB9807D2A079B84009DFBC6 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1DB9808F2A079FD9009DFBC6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1DB980902A07A022009DFBC6 /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				1DB9807E2A079B84009DFBC6 /* ContentView.swift in Sources */,
 				1DB9808E2A079F13009DFBC6 /* Product.swift in Sources */,
 				1DB9807C2A079B84009DFBC6 /* MVApp.swift in Sources */,
+				1DB980912A07A022009DFBC6 /* Webservice.swift in Sources */,
 				1DB9808C2A079E9A009DFBC6 /* StoreModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
