@@ -21,10 +21,12 @@ class StoreModel: ObservableObject {
     }
     
     func populateProducts() async throws {
-        do {
-            products = try await webservice.getProducts()
-        } catch {
-            print(error)
-        }
+//        do {
+//            products = try await webservice.getProducts()
+//        } catch {
+//            print(error)
+//        }
+        
+        products = try await webservice.getProducts()
     }
 }
