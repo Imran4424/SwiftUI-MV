@@ -20,10 +20,9 @@ class StoreModel: ObservableObject {
         self.webservice = webservice
     }
     
-    func populateProducts() async {
+    func populateProducts() async throws {
         do {
-            let products = try await webservice.getProducts()
-            
+            products = try await webservice.getProducts()
         } catch {
             print(error)
         }
